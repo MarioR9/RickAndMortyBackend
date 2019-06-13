@@ -1,0 +1,2 @@
+class Rick < ApplicationRecord
+end

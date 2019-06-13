@@ -1,0 +1,3 @@
+class Morty < ApplicationRecord
+    
+end
