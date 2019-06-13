@@ -17,6 +17,7 @@ ActiveRecord::Schema.define(version: 2019_06_13_154505) do
 
   create_table "morties", force: :cascade do |t|
     t.string "name"
+    t.integer "rick_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end

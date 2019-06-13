@@ -7,4 +7,7 @@
 #   Character.create(name: 'Luke', movie: movies.first)
   rickOne = Rick.find_or_create_by(name:"Mario", age: 78)
 
-  mortyOne = Morty.find_or_create_by(name: "Happy Morty")
+  mortyOne = Morty.find_or_create_by(name: "Happy Morty", rick_id: 1)
+  mortyTwo = Morty.find_or_create_by(name: "Sad Morty", rick_id: 1)
+  mortyThree = Morty.find_or_create_by(name: "New Morty", rick_id: 1)
+  mortyFour = Morty.find_or_create_by(name: "Evil Morty", rick_id: 1)
