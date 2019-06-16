@@ -14,8 +14,8 @@ class RicksController < ApplicationController
     end
 
     def create
-         newRick = Rick.find_or_create_by(name: params[:name], age: params[:age])
-         newMorty = Morty.find_or_create_by(name:params[:mortyName],rick_id: newRick.id)
+         newRick = Rick.find_or_create_by(name: params[:name], age: params[:age], char: params[:char])
+         newMorty = Morty.find_or_create_by(morty: params[:MortyId],rick_id: newRick.id)
          if newRick
            rick = Rick.all.find_by(name: params[:name])
         render json: rick

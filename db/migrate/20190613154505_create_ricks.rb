@@ -3,7 +3,7 @@ class CreateRicks < ActiveRecord::Migration[6.0]
     create_table :ricks do |t|
       t.string :name
       t.integer :age
-      
+      t.integer :char
       t.timestamps
     end
   end

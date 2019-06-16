@@ -16,7 +16,7 @@ ActiveRecord::Schema.define(version: 2019_06_13_154505) do
   enable_extension "plpgsql"
 
   create_table "morties", force: :cascade do |t|
-    t.string "name"
+    t.integer "morty"
     t.integer "rick_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
@@ -25,6 +25,7 @@ ActiveRecord::Schema.define(version: 2019_06_13_154505) do
   create_table "ricks", force: :cascade do |t|
     t.string "name"
     t.integer "age"
+    t.integer "char"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end

@@ -1,4 +1,4 @@
 class RickSerializer < ActiveModel::Serializer
-  attributes :name, :age
+  attributes :name, :age, :char
   has_many :morties
 end

@@ -1,4 +1,4 @@
 class MortySerializer < ActiveModel::Serializer
-  attributes :name
+  attributes :morty
   belongs_to :rick
 end
