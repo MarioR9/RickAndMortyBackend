@@ -32,8 +32,10 @@ class RicksController < ApplicationController
          newMorty = Morty.create(morty: params[:MortyId],rick_id: newRick.id)
          if newRick
            user = Rick.all.find_by(username: params[:username])
+           payload = {user_id: user.id}
+           token = encode(payload)
            morties = Rick.all.find_by(username: params[:username]).morties
-        render json: {user: user, morties: morties}
+        render json: {user: user, morties: morties, token: token }
          end
     end
     def edit 
