@@ -10,20 +10,30 @@ class RicksController < ApplicationController
       if user && user.authenticate(params[:password])
           payload = {user_id: user.id}
           token = encode(payload)
-          render json: {user: user, token: token}
+          morties = Rick.all.find_by(username: params[:username]).morties
+          render json: {user: user, token: token, morties: morties} 
       else
           render json: {message: "not an user"}
       
         end
     end
 
+    def authenticate
+        token = request.headers["Authentication"].split(" ")[1]
+        payload = decode(token)
+        @user = Rick.find(payload["user_id"])
+        morties = Rick.find(payload["user_id"]).morties
+          render json: {user: @user, morties: morties} 
+    end 
+
     def create
   
          newRick = Rick.create(username: params[:username],password: params[:password], age: params[:age], avatar: params[:avatar])
          newMorty = Morty.create(morty: params[:MortyId],rick_id: newRick.id)
          if newRick
-           rick = Rick.all.find_by(username: params[:username])
-        render json: rick
+           user = Rick.all.find_by(username: params[:username])
+           morties = Rick.all.find_by(username: params[:username]).morties
+        render json: {user: user, morties: morties}
          end
     end
     
