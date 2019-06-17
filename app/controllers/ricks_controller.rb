@@ -36,5 +36,21 @@ class RicksController < ApplicationController
         render json: {user: user, morties: morties}
          end
     end
+    def edit 
+        @editUser = Rick.find_by(username: params[:username])
+    end
+
+    def update 
+      
+        @editUser = Rick.find(params[:id])
+        if @editUser
+            @editUser.update_attributes(username: params[:username],password: params[:password],age: params[:age], avatar: params[:avatar])
+            user = Rick.find(params[:id])
+            morties = user.morties
+        render json: {user: user, morties: morties}
+
+        end
+      
+    end 
     
 end
