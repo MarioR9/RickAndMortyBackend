@@ -5,18 +5,19 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
-  rickOne = Rick.find_or_create_by(name:"Mario", age: 78, char: 0)
-  ricktwo = Rick.find_or_create_by(name:"Liz", age: 53, char: 12 )
+  
+ Rick.create(username: "Mario", password: "password1", age: 78, avatar: 0)
+ Rick.create(username:"Liz", password: 'password2', age: 53, avatar: 12)
 
 
-  Morty.find_or_create_by(morty: 0, rick_id: 1)
-  Morty.find_or_create_by(morty: 1, rick_id: 1)
-  Morty.find_or_create_by(morty: 2, rick_id: 1)
-  Morty.find_or_create_by(morty: 3, rick_id: 1)
+  Morty.create(morty: 0, rick_id: 1)
+  Morty.create(morty: 1, rick_id: 1)
+  Morty.create(morty: 2, rick_id: 1)
+  Morty.create(morty: 3, rick_id: 1)
 
-  Morty.find_or_create_by(morty: 0, rick_id: 2) 
-  Morty.find_or_create_by(morty: 1, rick_id: 2)
-  Morty.find_or_create_by(morty: 2, rick_id: 2)
-  Morty.find_or_create_by(morty: 3, rick_id: 2)
-  Morty.find_or_create_by(morty: 4, rick_id: 2)
+  Morty.create(morty: 0, rick_id: 2) 
+  Morty.create(morty: 1, rick_id: 2)
+  Morty.create(morty: 2, rick_id: 2)
+  Morty.create(morty: 3, rick_id: 2)
+  Morty.create(morty: 4, rick_id: 2)
 
