@@ -1,4 +1,4 @@
 class MortySerializer < ActiveModel::Serializer
-  attributes :morty 
+  attributes :id, :morty, :food ,:health, :level
   
 end
