@@ -10,14 +10,14 @@
  Rick.create(username:"Liz", password: 'password2', age: 53, avatar: 12)
 
 
-  Morty.create(morty: 0, rick_id: 1)
-  Morty.create(morty: 1, rick_id: 1)
-  Morty.create(morty: 2, rick_id: 1)
-  Morty.create(morty: 3, rick_id: 1)
+  Morty.create(morty: 0, rick_id: 1, food: 4, health: 50, level: 23)
+  Morty.create(morty: 1, rick_id: 1, food: 4, health: 50, level: 23)
+  Morty.create(morty: 2, rick_id: 1, food: 4, health: 50, level: 23)
+  Morty.create(morty: 3, rick_id: 1, food: 4, health: 50, level: 23)
 
-  Morty.create(morty: 0, rick_id: 2) 
-  Morty.create(morty: 1, rick_id: 2)
-  Morty.create(morty: 2, rick_id: 2)
-  Morty.create(morty: 3, rick_id: 2)
-  Morty.create(morty: 4, rick_id: 2)
+  Morty.create(morty: 0, rick_id: 2, food: 4, health: 50, level: 23) 
+  Morty.create(morty: 1, rick_id: 2, food: 4, health: 50, level: 23)
+  Morty.create(morty: 2, rick_id: 2, food: 4, health: 50, level: 23)
+  Morty.create(morty: 3, rick_id: 2, food: 4, health: 50, level: 23)
+  Morty.create(morty: 4, rick_id: 2, food: 4, health: 50, level: 23)
 
