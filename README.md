@@ -1,24 +1,7 @@
-# README
+#Rick and Morty Adventures 
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Rick and Morty Adventures is an rpg game that allows you to play as Rick and capture different Morties. In addition, users have to look after each Morty they capture and help them level up by keeping them healthy and fed.
++ Developed a Rails API backend.
++ Implemented beautiful user interface employing React with Semantic-React for styling.
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+#Rick and Morty Adventures 
