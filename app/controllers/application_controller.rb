@@ -1,8 +1,9 @@
 class ApplicationController < ActionController::API
 
-
+    
     def secret_key
         "Wubbalubbadubdub!"
+       #test secret key 
     end
     # takes a payload and returns a token
     def encode(payload)
