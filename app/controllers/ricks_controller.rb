@@ -29,7 +29,7 @@ class RicksController < ApplicationController
     def create
   
          newRick = Rick.create(username: params[:username],password: params[:password], age: params[:age], avatar: params[:avatar])
-         newMorty = Morty.create(morty: params[:MortyId],rick_id: newRick.id)
+         newMorty = Morty.create(morty: params[:MortyId],rick_id: newRick.id,food: rand(1..100),health: rand(1..100),level: rand(1..100))
          if newRick
            user = Rick.all.find_by(username: params[:username])
            payload = {user_id: user.id}
