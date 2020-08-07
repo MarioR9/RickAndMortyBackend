@@ -1,4 +1,5 @@
-[![Generic badge](https://img.shields.io/badge/Code-React-blue.svg)](https://shields.io/)&nbsp; [![Generic badge](https://img.shields.io/badge/Code-RubyOnRails-red.svg)](https://shields.io/)&nbsp; [![Generic badge](https://img.shields.io/badge/Code-JavaScript-yellow.svg)](https://shields.io/)&nbsp; ![GitHub repo size](https://img.shields.io/github/repo-size/MarioR9/TranslateMeFrontend?color=g&label=Repo%20Size)
+[![Generic badge](https://img.shields.io/badge/Code-React-blue.svg)](https://shields.io/)&nbsp; [![Generic badge](https://img.shields.io/badge/Code-RubyOnRails-red.svg)](https://shields.io/)&nbsp; [![Generic badge](https://img.shields.io/badge/Code-JavaScript-yellow.svg)](https://shields.io/)&nbsp; ![GitHub repo size](https://img.shields.io/github/repo-size/MarioR9/RickAndMortyBackend?color=g&label=Repo%20Size)&nbsp; ![GitHub last commit](https://img.shields.io/github/last-commit/MarioR9/RickAndMortyBackend)
+
 
 ## Rick and Morty Adventures 
 
