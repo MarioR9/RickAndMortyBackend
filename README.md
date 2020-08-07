@@ -2,6 +2,7 @@
 
 ## Rick and Morty Adventures 
 
+[![Generic badge](https://img.shields.io/badge/Demo-Youtube-red.svg)](https://www.youtube.com/watch?v=0KokNpVvjeA&feature=emb_logo)&nbsp;
 
 ## Table of contents
 * [General info](#general-info)
